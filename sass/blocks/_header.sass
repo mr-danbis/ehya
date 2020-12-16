@@ -34,6 +34,8 @@
       line-height: 22px
       text-align: center
       color: #183B56
+    &__link:hover
+      color: $mainColor
   &_mobile-button
     display: none
 
@@ -44,8 +46,11 @@
     font-size: 16px
     line-height: 22px
     text-align: center
-    color: #1565D8
-    border: 2px solid #1565D8
+    color: $mainColor
+    border: 2px solid $mainColor
     filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
     border-radius: 8px
     padding: 11px 22px
+  &__link:hover
+    background-color: $mainColor
+    color: #fff
