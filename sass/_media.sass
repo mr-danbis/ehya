@@ -1,25 +1,10 @@
-@media ( max-width: 1315px )
-  .container
-    max-width: 1100px
-
 @media ( max-width: 1200px )
   .container
     max-width: 1000px
 
-  .banner
-    &_right
-      overflow: hidden
-      border-radius: 8px
-      &__image
-        margin-left: 14%
-
-@media ( max-width: 1050px )
-  .container
-    max-width: 900px
-
-  .banner
-    &_left
-      padding-left: 50px
+  .header
+    &-wrapper
+      max-width: 89%
 
 @media ( max-width: 992px )
   .container
@@ -45,68 +30,14 @@
         min-height: 13%
         background-color: black
 
-@media ( max-width: 905px )
-  .container
-    max-width: 800px
-
-@media ( max-width: 850px )
-  .container
-    max-width: 750px
-
 @media ( max-width: 768px )
   .container
     max-width: 728px
 
   .header
     &-wrapper
-      padding: 22px 0
-
-  .banner
-    &-wrapper
-      margin-top: 28px
-      min-height: 622px
-    &_left
-      padding-left: 28px
-      &__text
-        max-width: 422px
-        margin-bottom: 33px
-      &__hashtag
-        margin-top: 39px
-        margin-bottom: 28px
-      &__title
-        font-size: 48px
-        line-height: 60px
-      &__subtitle
-        max-width: 400px
-        font-size: 18px
-        line-height: 32px
-      &__button
-        margin-bottom: 40px
-      &__item
-        margin-right: 22px
-    &_right
-      grid-column: 1/8
-
-
-@media ( max-width: 740px )
-  .container
-    max-width: 650px
-
-  .banner
-    background-color: #E8EAE9
-    &-wrapper
-      border-radius: 0
-      grid-template: repeat(3, 1fr) / repeat(2, 1fr)
-    &_right
-      grid-column: 1/3
-      grid-row: 1/3
-      &__image
-        margin: 0
-    &_left
-      grid-column: 1/3
-      grid-row: 2 /4
-      display: flex
-      align-items: center
+      padding: 25px 0
+      margin-bottom: 22px
 
 @media ( max-width: 320px )
   .container
@@ -114,5 +45,30 @@
 
   .header
     &-wrapper
-      width: 93%
+      max-width: 93%
       padding: 18px 0
+
+  .banner
+    &-wrapper
+      background-position: 90%
+    &_left
+      &__hashtag
+        margin-bottom: 22px
+      &__title
+        font-size: 32px
+        line-height: 40px
+        max-width: 244px
+      &__subtitle
+        max-width: 241px
+        font-size: 16px
+        line-height: 28px
+        margin-bottom: 21px
+      &__list
+        margin-top: 17px
+        display: flex
+        justify-content: center
+      &__item
+        margin-left: 11px
+        margin-right: 5px
+      &__icon
+        width: 26px
