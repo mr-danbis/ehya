@@ -13,3 +13,6 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 })
 
+const reviewsContainer = document.querySelector('.feedback-container')
+reviewsContainer.addEventListener('mouseover', () => mySwiper.autoplay.stop())
+reviewsContainer.addEventListener('mouseout', () => mySwiper.autoplay.start())
