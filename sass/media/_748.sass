@@ -1,0 +1,53 @@
+@media ( max-width: 748px )
+  .container
+    max-width: 90%
+    margin: auto
+
+  .banner
+    &-wrapper
+      background-image: url('../img/banner/banner.png')
+      background-position: center
+
+  .collection
+    &_left
+      &-wrapper
+        grid-template: repeat(2, 170px) / repeat(2, 260px)
+        max-width: 672px
+        height: auto
+        grid-row-gap: 43px
+
+  .history
+    &-wrapper
+      margin-bottom: 129px
+    &_right
+      grid-template: repeat(2, 408px)/repeat(1, 80%)
+      grid-row-gap: 80px
+
+  .footer
+    &-wrapper
+      grid-template: repeat(5, 165px) / repeat(2, 1fr)
+    &_info
+      grid-area: 5/1/6/3
+      margin: auto
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 263px
+      &__subtitle
+        text-align: center
+    &_navigation
+      grid-area: 1/1/3/2
+      margin: auto
+      margin-top: 0
+    &_services
+      grid-area: 1/2/3/3
+      margin: auto
+      margin-top: 0
+    &_company
+      grid-area: 3/1/5/2
+      margin: auto
+      margin-top: 0
+    &_contacts
+      grid-area: 3/2/5/3
+      margin: auto
+      margin-top: 0

@@ -1,0 +1,88 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 1000px
+
+  .header
+    &-wrapper
+      max-width: 89%
+
+  .history
+    &-container
+      max-width: 1000px
+
+  .footer
+    &-wrapper
+      display: grid
+      grid-template: repeat(4, 165px) / repeat(3, 1fr)
+    &_info
+      margin: 0
+      margin-left: auto
+      margin-right: auto
+    &_navigation
+      margin: 0
+      margin-left: auto
+      margin-right: auto
+    &_services
+      margin: 0
+      margin-left: auto
+      margin-right: auto
+    &_company
+      margin: 0
+      margin-left: auto
+      margin-right: auto
+      grid-area: 3/2/5/3
+    &_contacts
+      margin: 0
+      margin-left: auto
+      margin-right: auto
+      grid-area: 3/3/5/4
+
+  .look-more
+    height: 305px
+    &__title
+      font-size: 21px
+
+  .collection
+    &-wrapper
+      flex-direction: column
+    &_left
+      display: flex
+      justify-content: center
+    &_right
+      display: flex
+      justify-content: center
+      padding-left: 0
+      &__subtitle
+        max-width: 672px
+
+  .history
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+    &_left
+      margin-right: 0
+      max-width: 70%
+      margin: auto
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__line-break
+        &-1
+          display: none
+      &__hashtag
+        margin: 0
+        margin-bottom: 30px
+      &__title
+        margin: 0
+        margin-bottom: 16px
+        max-width: 100%
+      &__subtitle
+        text-align: center
+        max-width: 100%
+        margin: 0
+        margin-bottom: 31px
+      &__buttons
+        margin-bottom: 36px
+      &__icon-button
+        margin-right: 22px

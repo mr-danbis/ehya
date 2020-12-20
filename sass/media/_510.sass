@@ -1,0 +1,43 @@
+@media ( max-width: 510px )
+  .container
+    max-width: 450px
+
+  .collection
+    &_left
+      &-wrapper
+        max-height: 411px
+        grid-template: 300px 97px / repeat(2, 138px)
+        grid-gap: 14px
+      &__image
+        &--large
+          grid-area: 1/1/2/3
+          max-height: 300px
+          object-fit: cover
+          border-radius: 8px
+
+  .trends
+    &-grid
+      display: grid
+      grid-template: repeat(4, 22%) / repeat(2, 1fr)
+
+  .look-more
+    &__title
+      width: 155px
+
+  .feedback
+    &-slider
+      &__text
+        max-width: 410px
+
+  .subscribe
+    &__form
+      flex-direction: column
+    &__input
+      margin-bottom: 10px
+      padding-right: 35px
+    &__button
+      position: static
+      border-radius: 8px
+      height: 56px
+      display: flex
+      justify-content: center

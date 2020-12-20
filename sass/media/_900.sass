@@ -1,0 +1,17 @@
+@media ( max-width: 900px )
+  .container
+    max-width: 800px
+
+  .trends
+    &-wrapper
+      align-items: center
+    &-grid
+      display: grid
+      grid-template: repeat(4, 23%) / repeat(2, 1fr)
+      max-width: 86%
+    &_card:nth-child(odd)
+      margin-left: auto
+
+  .footer
+    &_info
+      max-width: 185px

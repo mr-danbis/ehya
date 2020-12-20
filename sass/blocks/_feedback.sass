@@ -1,22 +1,23 @@
 .feedback
-  &-container
-    max-width: 800px
-    margin: auto
-    margin-bottom: 54px
-  &-wrapper
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
+  margin-bottom: 51px
   &-icon
     margin-bottom: 34px
     width: 80px
-
-.swiper
-  &-container
-    width: 810px
-    height: 300px
-  &-slide
+  &-slider
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 810px
+    min-height: 402px
+    &__item
+      background-color: #fff
+      border-radius: 8px
+      max-width: 810px
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: relative
+      height: auto
     &__text
       font-family: HKGrotesk-Medium
       font-style: normal
@@ -29,6 +30,7 @@
       margin: 0
       margin-bottom: 29px
       max-height: 168px
+      max-width: 810px
       overflow-y: auto
     &__author
       font-family: HKGrotesk-Medium

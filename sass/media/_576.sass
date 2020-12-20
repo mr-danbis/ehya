@@ -1,0 +1,30 @@
+@media ( max-width: 576px )
+  .container
+    max-width: 500px
+    margin: auto
+
+  .collection
+    &_left
+      &-wrapper
+        grid-template: repeat(2, 130px) / repeat(2, 220px)
+        max-width: 672px
+        height: auto
+        grid-row-gap: 43px
+    &_right
+      &__title
+        margin-top: 36px
+        text-align: center
+      &__subtitle
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+      &__all-collection
+        justify-content: center
+
+  .trends
+    &-grid
+      grid-template: repeat(4, 340px)/repeat(2, 1fr)
+    &_card
+      &__title
+        font-size: 16px
+        line-height: 20px
