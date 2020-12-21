@@ -1,0 +1,134 @@
+.modal
+  &-overlay,
+  &__wrapper
+    position: fixed
+    opacity: 0
+    visibility: hidden
+    transition: 0.3s
+    &--active
+      opacity: 1
+      visibility: visible
+      transition: 0.3s
+      overflow-y: auto
+  &-overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    min-height: 100vh
+    background-color: rgba($black, 0.4)
+    z-index: 99
+    cursor: pointer
+  &__wrapper
+    position: fixed
+    top: 50%
+    right: 50%
+    transform: translate(50%, -50%)
+    min-width: 540px
+    max-width: 600px
+    padding: 30px 40px
+    z-index: 100
+    border-radius: 8px
+    background-color: #fafafa
+  &__close
+    padding: 0
+    position: absolute
+    top: 10px
+    right: 10px
+    background-color: transparent
+    border: none
+    outline: none
+    cursor: pointer
+  &__title
+    margin-bottom: 30px
+    max-width: 430px
+  &-form
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    &__group
+      position: relative
+      flex: 1 1 48%
+      margin-bottom: 20px
+      &:first-child
+        margin-right: 2%
+    &__icon
+      position: absolute
+      top: 25px
+      left: 10px
+      width: 24px
+      height: 24px
+      transform: translateY(-50%)
+      pointer-events: none
+      svg
+        width: 100%
+        height: 100%
+        fill: $black
+      &-pw
+        position: absolute
+        top: 25px
+        right: 10px
+        transform: translateY(-50%)
+        width: 24px
+        height: 24px
+        cursor: pointer
+        svg
+          width: 100%
+          height: 100%
+          fill: $secondary
+        &--visible
+          .modal-form__icon-eye--open
+            display: block
+          .modal-form__icon-eye--close
+            display: none
+      &-eye
+        &--open
+          display: none
+        &--close
+          display: block
+    &__input
+      padding: 0 40px
+      width: 100%
+      height: 50px
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #959ead
+      background-color: #ffffff
+      border: 1px solid $secondary-light
+      border-radius: 8px
+      outline: none
+    &__button
+      min-width: 49%
+      border: none
+      border-radius: 8px
+      cursor: pointer
+      padding: 20px 20px
+      color: #fff
+      background-color: $mainColor
+      font-weight: bold
+    &__button:hover
+      background-color: $secondaryColor
+
+@media screen and ( max-width: 768px )
+  .modal
+    &__wrapper
+      min-width: 95%
+      max-width: 95%
+    &-form
+      justify-content: flex-end
+
+@media screen and ( max-width: 576px )
+  .modal
+    &__wrapper
+      padding: 25px
+    &__title
+      max-width: 100%
+    &-form
+      &__group
+        flex-basis: 100%
+        margin-right: 0 !important
+      &__button
+        flex-basis: 100%
