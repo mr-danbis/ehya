@@ -17,7 +17,7 @@
 <body>
 
 
-<header class="header">
+<header class="header header_mobile--fixed">
     <div class="container">
       <div class="header-container">
         <div class="header-wrapper">
@@ -133,15 +133,15 @@
        <div class="trends_top">
         <h1 class="title trends_top__title">Тренды</h1>
           <ul class="list trends__list">
-            <li class="item trends__item">Новинки</li>
-            <li class="item trends__item">Лучшее</li>
-            <li class="item trends__item">Скоро</li>
+            <li class="item trends__item trends__item--active" data-sort="new">Новинки</li>
+            <li class="item trends__item" data-sort="best">Лучшее</li>
+            <li class="item trends__item" data-sort="soon">Скоро</li>
           </ul>
         </div>
 
         <div class="trends-grid">
     
-          <div class="trends_card">
+          <div class="trends_card" data-sort-type="new">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image.png" alt="Photo: trends" class="trends__image trends_card__image">
               <h3 class="title trends_card__title">Minimalist Style</h3>
@@ -154,7 +154,7 @@
             </div>
           </div>
 
-          <div class="trends_card">
+          <div class="trends_card" data-sort-type="new">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-1.png" alt="Photo: trends" class="trends__image trends_card__image">
               <h3 class="title trends_card__title">Luxury Gown</h3>
@@ -167,7 +167,7 @@
             </div>
           </div>
 
-          <div class="trends_card">
+          <div class="trends_card" data-sort-type="new">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-2.png" alt="Photo: trends" class="trends__image trends_card__image">
               <h3 class="title trends_card__title">Full Coloristy</h3>
@@ -180,7 +180,7 @@
             </div>
           </div>
 
-          <div class="trends_card">
+          <div class="trends_card" data-sort-type="best">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-3.png" alt="Photo: trends" class="trends__image trends_card__image">
               <h3 class="title trends_card__title">Pinky Winky</h3>
@@ -193,7 +193,7 @@
             </div>
           </div>
           
-          <div class="trends_card">
+          <div class="trends_card" data-sort-type="best">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-4.png" alt="Photo: trends" class="trends__image trends_card__image">
               <h3 class="title trends_card__title">Holiday Vibes</h3>
@@ -206,7 +206,7 @@
             </div>
           </div>
           
-          <div class="trends_card">
+          <div class="trends_card" data-sort-type="soon">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-5.png" alt="Photo: trends" class="trends__image trends_card__image">
               <h3 class="title trends_card__title">Swaggie Shaggy</h3>
@@ -219,7 +219,7 @@
             </div>
           </div>
 
-          <div class="trends_card">
+          <div class="trends_card" data-sort-type="soon">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-6.png" alt="Photo: trends" class="trends__image trends_card__image">
               <h3 class="title trends_card__title">Red Formal</h3>
@@ -232,7 +232,7 @@
             </div>
           </div>
 
-          <div class="trends_card trends_card__look">
+          <div class="trends_card trends_card__look trends_card--empty" data-sort-type="new" data-sort-type="best" data-sort-type="soon">
             <a href="#" class="link look-more_link">
               <div class="look-more">
                 <img src="img/icon/plus.svg" alt="Icon: plus" class="look-more__icon">

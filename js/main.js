@@ -17,6 +17,12 @@ const reviewsContainer = document.querySelector('.swiper-container')
 reviewsContainer.addEventListener('mouseover', () => mySwiper.autoplay.stop())
 reviewsContainer.addEventListener('mouseout', () => mySwiper.autoplay.start())
 
+//Мобильное меню
+var menuButton = document.querySelector('.mobile-button')
+menuButton.addEventListener('click', function(){
+   document.querySelector('.navbar-group').classList.toggle('.navbar-group--visible')
+});
+
 
 
 // Всё, что связано с модалкой
