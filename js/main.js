@@ -108,3 +108,24 @@ $(document).ready(function(){
     $(activeContent).addClass('trends_content--active');
   });
 });
+
+
+// Кнопка для скрола вверх
+const scrollUpButton = document.querySelector('.to-top')
+const offset = 300
+const getTop = () => window.pageYOffset || document.documentElement.scrollTop
+
+window.addEventListener('scroll', () => {
+  if (getTop() > offset) {
+    scrollUpButton.classList.add('to-top--active')
+  } else {
+    scrollUpButton.classList.remove('to-top--active')
+  }
+})
+
+scrollUpButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
+})
