@@ -109,8 +109,9 @@
       color: #fff
       background-color: $mainColor
       font-weight: bold
-    &__button:hover
-      background-color: $secondaryColor
+    &__button
+      +hover
+        background-color: $secondaryColor
 
 @media screen and ( max-width: 768px )
   .modal
