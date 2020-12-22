@@ -57,6 +57,7 @@
   .nav
     &__item:not(:last-child)
       margin-right: 30px
+
 @media screen and ( max-width: 768px )
   .header
     position: relative
@@ -67,8 +68,9 @@
     &__right
       position: fixed
       top: -200%
-      right: 10px
-      left: 10px
+      margin: auto
+      left: 0
+      right: 0
       max-height: 100vh
       padding: 36px 24px
       overflow-y: auto
@@ -76,6 +78,7 @@
       align-items: start
       background-color: #fff
       z-index: 99
+      width: 304px
     &__nav
       margin-right: 0
       margin-bottom: 20px
@@ -102,3 +105,9 @@
     margin-bottom: 16px
     &__button
       width: 100%
+
+@media screen and ( max-width: 320px )
+  .header
+    &__right
+      right: 10px
+      left: 10px
