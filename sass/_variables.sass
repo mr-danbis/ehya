@@ -4,3 +4,24 @@ $bannerColor: #E8EAE9
 $black: #183b56
 $secondary: #5a7184
 $secondary-light: #b3bac5
+$accent: #1565d8
+
+// Mixins
+=link-reset
+  text-decoration: none
+  color: inherit
+=trs($selector)
+  transition: $selector 0.2s ease 0s
+=font-hk
+  font-feature-settings: "locl" 0
+  font-family: 'HKGrotesk-Regular', 'Open Sans', sans-serif
+=font-hk-m
+  font-feature-settings: "locl" 0
+  font-family: 'HKGrotesk-Mudium', 'Open Sans', sans-serif
+=font-hk-b
+  font-feature-settings: "locl" 0
+  font-family: 'HKGrotesk-Bold', 'Open Sans', sans-serif
+=hover
+  @media ( min-width: 992px )
+    &:not([disabled]):hover
+      @content

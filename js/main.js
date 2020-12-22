@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.feedback-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -8,9 +8,7 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
 
-  autoplay: {
-    delay: 7000,
-  },
+  
 })
 
 const reviewsContainer = document.querySelector('.swiper-container')
@@ -23,6 +21,28 @@ menuButton.addEventListener('click', function(){
    document.querySelector('.navbar-group').classList.toggle('.navbar-group--visible')
 });
 
+
+// Слайдер с историями
+if (document.querySelector('.stories-slider')) {
+  const storiesSlider = new Swiper('.stories-slider', {
+    spaceBetween: 24,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    slidesPerColumn: 2,
+    navigation: {
+      prevEl: '.stories-left__nav--prev',
+      nextEl: '.stories-left__nav--next',
+    },
+    breakpoints: {
+      577: {
+        spaceBetween: 18,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        slidesPerColumn: 1,
+      },
+    },
+  })
+}
 
 
 // Модалка
