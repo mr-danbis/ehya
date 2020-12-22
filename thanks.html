@@ -12,60 +12,66 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="shortcut icon" href="/ima/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
 
 <header class="header">
-    <div class="container">
-      <div class="header-container">
-        <div class="header-wrapper">
-        <div class="logo">
-          <a class="logo__link" href="https://daniel-bisyukov.ru/ehya/">
-            <img src="img/header/Logo.png" alt="Логотип">
-          </a>
-        </div>
-        <!-- /.logo -->
-        <div class="navbar-group">
-          <nav class="navbar">
-            <ul class="navbar-list">
-              <li class="navbar-list__item">
-                <a href="#" class="link navbar-list__link">Главная</a>
-              </li>
-              <li class="navbar-list__item">
-                <a href="#collection" class="link navbar-list__link">Новинки</a>
-              </li>
-              <li class="navbar-list__item">
-                <a href="#trends" class="link navbar-list__link">Тренды</a>
-              </li>
-              <li class="navbar-list__item">
-                <a href="#feedback" class="link navbar-list__link">Отзывы</a>
-              </li>
-              <li class="navbar-list__item navbar-list__item_contact">
-                <a href="#footer" class="link navbar-list__link">Контакты</a>
-              </li>
-            </ul>
-            <!-- /.navbar-list -->
-          </nav>
-          <!-- /.navbar -->
-          <div class="signin">
-            <a class="link signin__link" data-target="modal">Войти</a>
-          </div>
-          <!-- /.signin -->
-        </div>
-        <!-- /.navbar-group -->
-        <button class="mobile-button navbar_mobile-button">
-          <span class="mobile-button__line"></span>
-          <span class="mobile-button__line"></span>
-          <span class="mobile-button__line"></span>
-        </button>
-       </div> 
-       <!-- /.header-wrapper -->
+  <div class="container header-container">
+    <div class="header__wrapper">
+      <a class="header__logo logo no-hover" href="./index.html" aria-label="Ehya logo">
+        <img src="img/header/Logo.png" alt="Ehya logo" />
+      </a>
+      <!-- /.header__logo -->
+      <div class="header__right">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#hero" class="nav__link">Главная</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#info" class="nav__link">Новинки</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#trends" class="nav__link">Тренды</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Отзывы</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#footer" class="nav__link">Контакты</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+          </ul>
+          <!-- /.nav__list -->
+        </nav>
+        <!-- /.header__nav nav -->
+        <button class="button button--o header__button" data-target="modal">Войти</button>
+        <!-- /.button header__button -->
+        <img src="img/icon/close.svg" alt="Icon close" class="header__close" />
+        <!-- /.header__close -->
       </div>
-      <!-- /.header-container -->
+      <!-- /.header__right -->
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    <!-- /.container -->
+      <!-- /.header__burger -->
+    </div>
+    <!-- /.header__wrapper -->
+  </div>
+  <!-- /.container -->
 </header>
 <!-- /.header -->
 
@@ -74,7 +80,7 @@
     <div class="banner-wrapper banner-wrapper--thanks">
         <h1 class="title banner_left__title banner_left__title--thanks">Мы получили ваши данные!</h1>
         <p class="subtitle banner_left__subtitle">Мы рады, что вам с нами интересно!</p>
-        <a href="https://daniel-bisyukov.ru/ehya/" class="button button_home">Домой</a>
+        <a href="https://daniel-bisyukov.ru/ehya/" class="link button_home">Домой</a>
     </div>
   </div>
 </section>
@@ -255,7 +261,7 @@
         <!-- /.modal-form__icon-pw -->
       </div>
       <!-- /.modal-form__group -->
-      <button type="submit" class="button modal-form__button">Войти</button>
+      <button type="submit" class="button_all modal-form__button">Войти</button>
       <!-- /.button modal-form__button -->
     </form>
     <!-- /.modal-form -->
@@ -266,10 +272,28 @@
 </div>
 <!-- /.modal -->
 
-<a href="#" class="to-top">
-  <img src="img/icon/return.svg" alt="Наверх">
-</a>
+<button class="to-top">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M25 46.875a21.875 21.875 0 100-43.75 21.875 21.875 0 000 43.75zM25 50a25 25 0 100-50 25 25 0 000 50z"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M14.519 26.106a1.564 1.564 0 002.212 0L25 17.834l8.269 8.272a1.565 1.565 0 102.212-2.212l-9.375-9.375a1.563 1.563 0 00-2.212 0l-9.375 9.375a1.564 1.564 0 000 2.212z"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M25 35.938a1.563 1.563 0 001.563-1.563V18.75a1.563 1.563 0 00-3.125 0v15.625A1.563 1.563 0 0025 35.938z"
+    />
+  </svg>
+</button>
+<!-- /.to-top -->
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
