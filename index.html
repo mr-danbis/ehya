@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
             </li>
             <!-- /.nav__item -->
             <li class="nav__item">
-              <a href="#info" class="nav__link">Новинки</a>
+              <a href="#new" class="nav__link">Новинки</a>
               <!-- /.nav__link -->
             </li>
             <!-- /.nav__item -->
@@ -43,7 +43,7 @@
             </li>
             <!-- /.nav__item -->
             <li class="nav__item">
-              <a href="#reviews" class="nav__link">Отзывы</a>
+              <a href="#feedback" class="nav__link">Отзывы</a>
               <!-- /.nav__link -->
             </li>
             <!-- /.nav__item -->
@@ -75,39 +75,105 @@
 </header>
 <!-- /.header -->
 
-<section class="banner">
-  <div class="banner-container">
-    <div class="banner-wrapper">
-      <div class="banner_left">
-        <h6 class="hashtag banner_left__hashtag"># READY TO BE COOL</h6>
-        <h1 class="title banner_left__title" lang="en">Каждый может быть крутым <br> и модным</h1>
-        <p class="subtitle banner_left__subtitle">Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой стиль. Всё это вы можете найти здесь. Начните сейчас. </p>
-        <a href="#" class="button_all banner_left__button">Подобрать одежду</a>
-        <ul class="banner_left__list">
-            <li class="banner_left__item" lang="en"> 
-                <img src="img/icon/donation.svg" alt="Icon: donation" class="banner_left__icon">
-                Онлайн оплата
-            </li>
-            <li class="banner_left__item" lang="en">
-                <img src="img/icon/protect.svg" alt="Icon: protect" class="banner_left__icon">
-                Гарантия
-            </li>
-            <li class="banner_left__item quality" lang="en">
-                <img src="img/icon/like.svg" alt="Icon: like" class="banner_left__icon">
-                Качество
-            </li>
-          </ul>
-      </div>
-      <div class="banner_right">
-        <img class="banner_right__image" src="img/banner/banner.png" alt="Photo: women">
-      </div>
-    </div>
-  </div>
+<section class="hero" id="hero">
+          <div class="container hero__container">
+            <div class="hero__wrapper">
+              <div class="hero__badges badges">
+                <div class="hero__badge badge"># READY TO BE COOL</div>
+                <!-- /.hero__badge -->
+              </div>
+              <!-- /.hero__badges -->
+              <h1 class="title hero__title" lang="en">Каждый может быть крутым и&nbsp;модным</h1>
+              <!-- /.title hero__title -->
+              <p class="hero__desc">
+                Чтобы быть в тренде и&nbsp;стать модным, вам нужно носить отличную одежду и&nbsp;обновлять
+                свой&nbsp;стиль. Всё это вы&nbsp;можете найти здесь. Начните сейчас.
+              </p>
+              <!-- /.hero__desc -->
+              <button class="button hero__button">Подобрать одежду</button>
+              <!-- /.button hero__button -->
+              <div class="features hero__features">
+                <ul class="features__list">
+                  <li class="features__item">
+                    <div class="features__icon features__icon--1">
+                      <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.663 12.618c.522-1.135.04-2.07-1.29-2.65l-2.203-.91a2.097 2.097 0 00-2.13.317l-2.026 1.66-.059.59-.095 4.835v.84h2.452l5 1.42c.632.18 1.31.054 1.834-.34 3.295-2.477 5.497-4.15 5.83-4.46.808-.75 1.127-1.586.55-2.41-.465-.666-1.25-.737-2.223-.296l-4.732 2.406-1.331-.423c.172-.148.313-.34.423-.579z"
+                          fill="#1565D8"
+                        />
+                        <path
+                          opacity=".3"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M16.21 3.86H15.2v-.21a.63.63 0 10-1.26 0v.21h-.198a1.47 1.47 0 00-1.47 1.472v.421a1.47 1.47 0 001.47 1.472h1.668a.21.21 0 01.21.21v.42a.21.21 0 01-.21.21h-1.928a.63.63 0 00-1.21.226l-.012.386a.63.63 0 00.63.65h1.05v.203a.63.63 0 101.26 0v-.204h.21a1.47 1.47 0 001.47-1.47v-.42a1.47 1.47 0 00-1.47-1.472h-1.668a.21.21 0 01-.21-.21v-.422a.21.21 0 01.21-.21h1.921a.63.63 0 001.178-.312V4.49a.63.63 0 00-.63-.63zM3.44 9.95h.21v7.98h-.21a.63.63 0 000 1.26h.84a.63.63 0 00.63-.63V9.32a.63.63 0 00-.63-.63h-.84a.63.63 0 100 1.26z"
+                          fill="#1565D8"
+                        />
+                      </svg>
+                    </div>
+                    <!-- /.features__icon -->
+                    <span class="features__text" lang="en">Онлайн оплата</span>
+                    <!-- /.features__text -->
+                  </li>
+                  <!-- /.features__item -->
+                  <li class="features__item">
+                    <div class="features__icon features__icon--2">
+                      <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M18.703 4.935l-7.56-2.73a.42.42 0 00-.286 0l-7.56 2.73a.42.42 0 00-.277.395V11c0 4.452 2.66 7.407 7.871 8.806a.42.42 0 00.22-.001c5.21-1.436 7.869-4.39 7.869-8.805V5.33a.42.42 0 00-.277-.395zM8.1 10.265a.42.42 0 01.593.015l1.7 1.786 3.567-3.87a.42.42 0 01.618.569l-3.872 4.2a.42.42 0 01-.613.005l-2.008-2.111a.42.42 0 01.014-.594z"
+                          fill="#1565D8"
+                        />
+                      </svg>
+                    </div>
+                    <!-- /.features__icon -->
+                    <span class="features__text" lang="en">Гарантия</span>
+                    <!-- /.features__text -->
+                  </li>
+                  <!-- /.features__item -->
+                  <li class="features__item">
+                    <div class="features__icon features__icon--3">
+                      <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.534 8.744c1.104-1.57 1.793-3.37 2.069-5.407a.505.505 0 01.352-.414c1.902-.588 2.982.346 2.964 2.478-.003.414-.022.782-.063 1.344-.09 1.257-.083 1.6.057 1.83.136.222.575.298 1.613.1.328-.061.656-.132 1.02-.216.16-.038 1.318-.32 1.614-.384.565-.122.97-.174 1.326-.152.964.06 1.476.68 1.565 1.87.155 2.096-.326 6.306-.806 7.856-.49 1.584-1.346 2.182-3.4 2.218-1.321.024-3.353.024-6.104 0-.702-.016-1.339-.152-1.905-.406.16-.33.248-.698.248-1.087V10.31c0-.592-.206-1.136-.55-1.566z"
+                          fill="#1565D8"
+                        />
+                        <path
+                          opacity=".3"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M3.525 8.798C2.683 8.798 2 9.475 2 10.31v8.064c0 .835.683 1.512 1.525 1.512h1.017c.842 0 1.525-.677 1.525-1.512V10.31c0-.835-.683-1.512-1.525-1.512H3.525z"
+                          fill="#1565D8"
+                        />
+                      </svg>
+                    </div>
+                    <!-- /.features__icon -->
+                    <span class="features__text" lang="en">Качество</span>
+                    <!-- /.features__text -->
+                  </li>
+                  <!-- /.features__item -->
+                </ul>
+                <!-- /.features__list -->
+              </div>
+              <!-- /.features hero__features -->
+              <div class="hero__bg">
+                <img class="hero__bg-image" src="img/hero/bg.png" alt="Hero background" />
+                <!-- /.hero__bg-image -->
+              </div>
+              <!-- /.hero__bg -->
+            </div>
+            <!-- /.hero__wrapper -->
+          </div>
+          <!-- /.container -->
 </section>
-<!-- /.banner -->
+<!-- /.hero -->
 
-<section class="collection" id="collection">
-  <div class="container collection-container">
+<section class="collection" id="new">
+  <div class="container">
     <div class="collection-wrapper">
       <div class="collection_left">
         <div class="collection_left-wrapper">
@@ -118,7 +184,7 @@
       </div>
       <div class="collection_right">
         <div class="collection_right-wrapper">
-          <h1 class="title collection_right__title" lang="en">Новая зимняя коллекция</h1>
+          <h1 class="title collection_right__title">Новая зимняя коллекция</h1>
           <p class="subtitle collection_right__subtitle">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии. Используйте код EHYA20, чтобы получить 20% скидку.</p>
           <div class="collection_right__all-collection">
             <a href="#" class="link collection_right__link">
@@ -137,7 +203,7 @@
   <div class="container">
     <div class="trends-wrapper">
        <div class="trends_top">
-        <h1 class="title trends_top__title" lang="en">Тренды</h1>
+        <h1 class="title trends_top__title">Тренды</h1>
           <ul class="list trends__list">
             <li data-target="#new" class="item trends__item trends__item--active">Новинки</li>
             <li data-target="#best" class="item trends__item">Лучшее</li>
@@ -150,7 +216,7 @@
           <div  class="trends_card trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Minimalist Style</h3>
+              <h3 class="title trends_card__title">Minimalist Style</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$25.7</span>
@@ -163,7 +229,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-1.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Luxury Gown</h3>
+              <h3 class="title trends_card__title">Luxury Gown</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$30.6</span>
@@ -176,7 +242,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-2.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Full Coloristy</h3>
+              <h3 class="title trends_card__title">Full Coloristy</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$25.7</span>
@@ -189,7 +255,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-3.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Pinky Winky</h3>
+              <h3 class="title trends_card__title">Pinky Winky</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$109</span>
@@ -202,7 +268,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-4.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Holiday Vibes</h3>
+              <h3 class="title trends_card__title">Holiday Vibes</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$51.2</span>
@@ -215,7 +281,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-5.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Swaggie Shaggy</h3>
+              <h3 class="title trends_card__title">Swaggie Shaggy</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$81.3</span>
@@ -228,7 +294,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-6.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Red Formal</h3>
+              <h3 class="title trends_card__title">Red Formal</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$66.8</span>
@@ -242,7 +308,7 @@
             <a href="#" class="link look-more_link">
               <div class="look-more">
                 <img src="img/icon/plus.svg" alt="Icon: plus" class="look-more__icon">
-                <h5 class="title look-more__title" lang="en">Смотреть <br> больше коллекций</h5>
+                <h5 class="title look-more__title">Смотреть <br> больше коллекций</h5>
               </div>
             </a>
           </div>
@@ -254,7 +320,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-1.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Luxury Gown</h3>
+              <h3 class="title trends_card__title">Luxury Gown</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$30.6</span>
@@ -267,7 +333,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-2.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Full Coloristy</h3>
+              <h3 class="title trends_card__title">Full Coloristy</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$25.7</span>
@@ -280,7 +346,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-5.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Swaggie Shaggy</h3>
+              <h3 class="title trends_card__title">Swaggie Shaggy</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$81.3</span>
@@ -293,7 +359,7 @@
            <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-6.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Red Formal</h3>
+              <h3 class="title trends_card__title">Red Formal</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$66.8</span>
@@ -306,7 +372,7 @@
            <div  class="trends_card trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Minimalist Style</h3>
+              <h3 class="title trends_card__title">Minimalist Style</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$25.7</span>
@@ -319,7 +385,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-4.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Holiday Vibes</h3>
+              <h3 class="title trends_card__title">Holiday Vibes</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$51.2</span>
@@ -332,7 +398,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-3.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Pinky Winky</h3>
+              <h3 class="title trends_card__title">Pinky Winky</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$109</span>
@@ -346,7 +412,7 @@
             <a href="#" class="link look-more_link">
               <div class="look-more">
                 <img src="img/icon/plus.svg" alt="Icon: plus" class="look-more__icon">
-                <h5 class="title look-more__title" lang="en">Смотреть <br> больше коллекций</h5>
+                <h5 class="title look-more__title">Смотреть <br> больше коллекций</h5>
               </div>
             </a>
           </div>
@@ -358,7 +424,7 @@
           <div  class="trends_card trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Minimalist Style</h3>
+              <h3 class="title trends_card__title">Minimalist Style</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$25.7</span>
@@ -371,7 +437,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-2.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Full Coloristy</h3>
+              <h3 class="title trends_card__title">Full Coloristy</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$25.7</span>
@@ -384,7 +450,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-1.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Luxury Gown</h3>
+              <h3 class="title trends_card__title">Luxury Gown</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$30.6</span>
@@ -398,7 +464,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-3.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Pinky Winky</h3>
+              <h3 class="title trends_card__title">Pinky Winky</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$109</span>
@@ -411,7 +477,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-4.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Holiday Vibes</h3>
+              <h3 class="title trends_card__title">Holiday Vibes</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$51.2</span>
@@ -424,7 +490,7 @@
            <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-6.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Red Formal</h3>
+              <h3 class="title trends_card__title">Red Formal</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$66.8</span>
@@ -437,7 +503,7 @@
           <div class="trends_card">
             <a href="#" class="link trends_card__link">
               <img src="img/trends/Image-5.png" alt="Photo: trends" class="trends__image trends_card__image">
-              <h3 class="title trends_card__title" lang="en">Swaggie Shaggy</h3>
+              <h3 class="title trends_card__title">Swaggie Shaggy</h3>
             </a>
             <div class="trends_card__bottom">
               <span class="trends_card__price">$81.3</span>
@@ -451,7 +517,7 @@
             <a href="#" class="link look-more_link">
               <div class="look-more">
                 <img src="img/icon/plus.svg" alt="Icon: plus" class="look-more__icon">
-                <h5 class="title look-more__title" lang="en">Смотреть <br> больше коллекций</h5>
+                <h5 class="title look-more__title">Смотреть <br> больше коллекций</h5>
               </div>
             </a>
           </div>
@@ -471,28 +537,28 @@
 
         <div class="swiper-slide">
           <div class="feedback-slider__item">
-            <p class="feedback-slider__text" lang="en">
+            <p class="feedback-slider__text">
               Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские. Я покупала несколько риз коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто <br class="feedback-slider__line-break">  превосходно. Я с нетерпением жду новых коллекций от сезона к сезону
             </p>
-            <h4 class="feedback-slider__author" lang="en">Алисия Пума - клиент Fashun</h4>
+            <h4 class="feedback-slider__author">Алисия Пума - клиент Fashun</h4>
           </div>
         </div>
 
         <div class="swiper-slide">
          <div class="feedback-slider__item">
-          <p class="feedback-slider__text" lang="en">
-            Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Запятой рукопись продолжил меня курсивных пустился, рот имени коварный взгляд знаках, свой, по всей ведущими.
+          <p class="feedback-slider__text">
+            Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Запятой рукопись продолжил меня курсивных пустился, рот имени коварный взгляд
           </p>
-          <h4 class="feedback-slider__author" lang="en"> Евгений Черник - клиент Fashun</h4>
+          <h4 class="feedback-slider__author"> Евгений Черник - клиент Fashun</h4>
          </div>
         </div>
 
         <div class="swiper-slide">
           <div class="feedback-slider__item">
-          <p class="feedback-slider__text" lang="en">
-            Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Проектах домах сих пустился свой залетают жизни вопроса вдали бросил коварных подпоясал вскоре переулка прямо агентство букв переписали великий запятой,
+          <p class="feedback-slider__text">
+            Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Проектах домах сих пустился свой залетают жизни вопроса вдали бросил коварных подпоясал вскоре переулка прямо агентство букв переписали великий запятой
           </p>
-          <h4 class="feedback-slider__author" lang="en">Анфиса Лятова - клиент Fashun</h4>
+          <h4 class="feedback-slider__author">Анфиса Лятова - клиент Fashun</h4>
           </div>
         </div>
       </div>
@@ -515,7 +581,7 @@
           <!-- /.stories-left__badge -->
         </div>
         <!-- /.stories-left__badges -->
-        <h2 class="stories-left__title title" lang="en">Это История Fashun</h2>
+        <h2 class="stories-left__title title">Это История Fashun</h2>
         <!-- /.stories-left__title -->
         <p class="stories-left__text">
           Ознакомьтесь с&nbsp;нашим рассказом о&nbsp;моде. Написано нашим дизайнером и&nbsp;специалистом.
@@ -554,7 +620,7 @@
               <div class="swiper-slide__item swiper-slide-1">
                 <img src="img/history/history_1.png" alt="" class="swiper-slide__image">
                 <div class="swiper-slide__bottom swiper-slide__bottom-1">
-                  <p class="swiper-slide__title" lang="en">Mix & Match Style 01: повседневный и формальный стиль</p>
+                  <p class="swiper-slide__title">Mix & Match Style 01: повседневный и формальный стиль</p>
                   <div class="swiper-slide__read-more">
                     <a href="#" class="link swiper-slide__link">Читать далее</a>
                   </div>
@@ -564,7 +630,7 @@
               <div class="swiper-slide__item swiper-slide-2">
                 <img src="img/history/history_2.png" alt="" class="swiper-slide__image">
                 <div class="swiper-slide__bottom">
-                  <p class="swiper-slide__title" lang="en">Лайфхак: Купите одежду Thrifft на воскресном рынке</p>
+                  <p class="swiper-slide__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</p>
                   <div class="swiper-slide__read-more">
                     <a href="#" class="link swiper-slide__link">Читать далее</a>
                   </div>
@@ -610,7 +676,7 @@
   <div class="container">
     <div class="subscribe-wrapper">
       <div class="subscribe__text">
-      <h1 class="title subscribe__title" lang="en">Подпишитесь</h1>
+      <h1 class="title subscribe__title">Подпишитесь</h1>
       <p class="subtitle subscribe__subtitle">Напишите свой адрес электронной почты. <br class="subscribe__line-break"> Мы будем присылать вам новости из мира моды.</p>
     </div>
     <form action="send.php" method="POST" class="form subscribe__form">
@@ -754,7 +820,7 @@
       <img src="img/icon/close.svg" alt="Icon close" />
     </button>
     <!-- /.modal__close -->
-    <h2 class="modal__title title" lang="en">Войдите в&nbsp;личный&nbsp;кабинет</h2>
+    <h2 class="modal__title title">Войдите в&nbsp;личный&nbsp;кабинет</h2>
     <!-- /.modal__title -->
     <form action="./send.php" method="POST" class="modal-form">
       <div class="modal-form__group">

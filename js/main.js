@@ -27,6 +27,7 @@ var mySwiperFeedBack = new Swiper('.feedback-slider', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   autoplay: {
@@ -35,9 +36,9 @@ var mySwiperFeedBack = new Swiper('.feedback-slider', {
 
 })
 
-const reviewsContainer = document.querySelector('.feedback-slider')
-reviewsContainer.addEventListener('mouseover', () => mySwiper.autoplay.stop())
-reviewsContainer.addEventListener('mouseout', () => mySwiper.autoplay.start())
+// const reviewsContainer = document.querySelector('.feedback-slider')
+// reviewsContainer.addEventListener('mouseover', () => mySwiper.autoplay.stop())
+// reviewsContainer.addEventListener('mouseout', () => mySwiper.autoplay.start())
 
 
 
@@ -45,7 +46,7 @@ reviewsContainer.addEventListener('mouseout', () => mySwiper.autoplay.start())
 var mySwiperStories = new Swiper('.stories-slider', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
 
   // Navigation arrows
   navigation: {
