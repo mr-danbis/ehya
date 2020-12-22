@@ -23,12 +23,20 @@
     font-weight: normal
     font-size: 18px
     line-height: 25px
+    cursor: pointer
+    border-bottom: 1px solid transparent
+    &--active
+      border-bottom: 1px solid black
   &-grid
     max-width: 100%
     display: grid
     grid-template: repeat(2, 441px) / repeat(4, 1fr)
     grid-row-gap: 50px
     grid-column-gap: 30px
+  &_content
+    display: none
+    &--active
+      display: grid
   &_card
     max-width: 260px
     overflow: hidden

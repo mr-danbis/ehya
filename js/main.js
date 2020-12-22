@@ -25,7 +25,7 @@ menuButton.addEventListener('click', function(){
 
 
 
-// Всё, что связано с модалкой
+// Модалка
 const modalButtons = document.querySelectorAll('[data-target=modal]')
 const modalOpen = () => {
   document.querySelector('.modal-overlay').classList.add('modal-overlay--active')
@@ -50,7 +50,7 @@ document.addEventListener('keyup', e => {
   if (e.code === 'Escape') modalClose()
 })
 
-// Пароль в инпуте в модалке
+// Пароль в модалке
 const iconPw = document.querySelector('.modal-form__icon-pw')
 const pwInput = document.querySelector('.modal-form__input--pw')
 iconPw.addEventListener('click', () => {
@@ -61,3 +61,20 @@ iconPw.addEventListener('click', () => {
   }
   iconPw.classList.toggle('modal-form__icon-pw--visible')
 })
+
+
+// Табы
+$(document).ready(function(){
+  var tabsTrendsItem = $('.trends__item');
+  var contentTrendsCard = $('.trends_content');
+
+  tabsTrendsItem.on('click', function(event){
+    var activeContent = $(this).attr('data-target');
+    
+    tabsTrendsItem.removeClass('trends__item--active');
+    $(this).addClass('trends__item--active');
+    
+    contentTrendsCard.removeClass('trends_content--active');
+    $(activeContent).addClass('trends_content--active');
+  });
+});
