@@ -1,3 +1,24 @@
+const headerBurger = document.querySelector('.header__burger')
+const headerClose = document.querySelector('.header__close')
+const nav = document.querySelector('.header__right')
+const body = document.querySelector('body')
+const navLinks = document.querySelectorAll('.nav__link')
+const menuOpen = () => {
+  nav.classList.add('header__right--active')
+  body.classList.add('overflow--hidden')
+}
+const menuClose = () => {
+  nav.classList.remove('header__right--active')
+  body.classList.remove('overflow--hidden')
+}
+
+// Навигация мобилок
+navLinks.forEach(link => link.addEventListener('click', menuClose))
+headerBurger.addEventListener('click', menuOpen)
+headerClose.addEventListener('click', menuClose)
+
+
+// Слайдер отзывов
 var mySwiper = new Swiper('.feedback-slider', {
   // Optional parameters
   direction: 'horizontal',
@@ -15,11 +36,6 @@ const reviewsContainer = document.querySelector('.swiper-container')
 reviewsContainer.addEventListener('mouseover', () => mySwiper.autoplay.stop())
 reviewsContainer.addEventListener('mouseout', () => mySwiper.autoplay.start())
 
-//Мобильное меню
-var menuButton = document.querySelector('.mobile-button')
-menuButton.addEventListener('click', function(){
-   document.querySelector('.navbar-group').classList.toggle('.navbar-group--visible')
-});
 
 
 // Слайдер с историями

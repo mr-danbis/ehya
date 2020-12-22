@@ -1,57 +1,104 @@
 .header
-  &-wrapper
-    width: 100%
-    padding: 36px 0
+  margin-bottom: 36px
+  padding: 26px 0
+  &__wrapper
     display: flex
-    flex-direction: row
+    align-items: center
     justify-content: space-between
-    align-items: center
-    margin-bottom: 36px
-  &-container
-    display: flex
-    justify-content: center
-
-.logo
-  width: 90px
-
-.navbar
-  &-group
+  &__logo
+  &__right
     display: flex
     align-items: center
-  &-list
-    margin: 0
-    padding: 0
-    display: flex
-    flex-direction: row
-    &__item
-      margin-right: 40px
-      list-style: none
-      &_contact
-        margin-right: 50px
-    &__link
-      font-style: normal
-      font-weight: 600
-      font-size: 16px
-      line-height: 22px
-      text-align: center
-      color: #183B56
-    &__link:hover
-      color: $mainColor
-  &_mobile-button
+    transition: 0.2s ease-in-out 0s
+    &--active
+      top: 10px !important
+  &__nav
+    margin-right: 50px
+    color: $black
+    font-weight: 600
+  &__button
+  &__burger
+    width: 24px
+    height: 24px
     display: none
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    span
+      display: block
+      width: 22px
+      height: 2px
+      background-color: #3a4c66
+      border-radius: 4px
+      &:nth-child(2)
+        margin: 5px 0
+  &__close
+    display: none
+    position: absolute
+    top: 12px
+    right: 16px
+    cursor: pointer
 
-.signin
+.nav
+  &__list
+    display: flex
+    align-items: center
+  &__item:not(:last-child)
+    margin-right: 40px
   &__link
-    font-style: normal
-    font-weight: bold
-    font-size: 16px
-    line-height: 22px
-    text-align: center
-    color: $mainColor
-    border: 2px solid $mainColor
-    filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
-    border-radius: 8px
-    padding: 11px 22px
-  &__link:hover
-    background-color: $mainColor
-    color: #fff
+    display: inline-block
+    +trs(color)
+    +link-reset
+    +hover
+      color: lighten($black, 17%)
+
+@media screen and ( max-width: 992px )
+  .nav
+    &__item:not(:last-child)
+      margin-right: 30px
+@media screen and ( max-width: 768px )
+  .header
+    position: relative
+    padding: 20px 0
+    margin-bottom: 30px
+    &__button
+      min-width: 150px
+    &__right
+      position: fixed
+      top: -200%
+      right: 10px
+      left: 10px
+      max-height: 100vh
+      padding: 36px 24px
+      overflow-y: auto
+      flex-direction: column
+      align-items: start
+      background-color: #fff
+      z-index: 99
+    &__nav
+      margin-right: 0
+      margin-bottom: 20px
+    &__close
+      display: block
+  .nav
+    width: 80%
+    &__list
+      align-items: start
+      flex-direction: column
+    &__item
+      width: 100%
+      &:not(:last-child)
+        margin-right: 0
+        margin-bottom: 20px
+    &__link
+      width: 100%
+
+  .header__burger
+    display: flex
+
+@media screen and ( max-width: 576px )
+  .header
+    margin-bottom: 16px
+    &__button
+      width: 100%

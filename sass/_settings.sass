@@ -11,6 +11,11 @@ img
 body
   font-family: 'Open Sans', sans-serif
 
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
 .link
   text-decoration: none
   cursor: pointer
@@ -45,9 +50,34 @@ body
   line-height: 36px
   color: #5A7184
 
-.button
+.button_all
   cursor: pointer
   text-decoration: none
+
+.button
+  padding: 0.9em 1.4em
+  border: 2px solid transparent
+  border-radius: 8px
+  background-color: #183b56
+  font-weight: 700
+  font-size: 16px
+  line-height: 1
+  color: #ffffff
+  cursor: pointer
+  transition: 0.2s ease 0s
+  outline: none
+  @media ( min-width: 992px )
+    background-color: lighten(#183b56, 7%)
+    border: 2px solid lighten(#183b56, 7%)
+  &--o
+    background-color: transparent
+    color: #1565d8
+    border: 2px solid #1565d8
+    transition: 0.2s ease 0s
+    @media ( min-width: 992px )
+      color: #ffffff
+      background-color: #1565d8
+      border: 2px solid transparent
 
 .list
   margin: 0

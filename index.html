@@ -17,55 +17,61 @@
 <body>
 
 
-<header class="header header_mobile--fixed">
-    <div class="container">
-      <div class="header-container">
-        <div class="header-wrapper">
-        <div class="logo">
-          <a class="logo__link" href="https://daniel-bisyukov.ru/ehya/">
-            <img src="img/header/Logo.png" alt="Логотип">
-          </a>
-        </div>
-        <!-- /.logo -->
-        <div class="navbar-group">
-          <nav class="navbar">
-            <ul class="navbar-list">
-              <li class="navbar-list__item">
-                <a href="#" class="link navbar-list__link">Главная</a>
-              </li>
-              <li class="navbar-list__item">
-                <a href="#collection" class="link navbar-list__link">Новинки</a>
-              </li>
-              <li class="navbar-list__item">
-                <a href="#trends" class="link navbar-list__link">Тренды</a>
-              </li>
-              <li class="navbar-list__item">
-                <a href="#feedback" class="link navbar-list__link">Отзывы</a>
-              </li>
-              <li class="navbar-list__item navbar-list__item_contact">
-                <a href="#footer" class="link navbar-list__link">Контакты</a>
-              </li>
-            </ul>
-            <!-- /.navbar-list -->
-          </nav>
-          <!-- /.navbar -->
-          <div class="signin">
-            <a class="link signin__link" data-target="modal">Войти</a>
-          </div>
-          <!-- /.signin -->
-        </div>
-        <!-- /.navbar-group -->
-        <button class="mobile-button navbar_mobile-button">
-          <span class="mobile-button__line"></span>
-          <span class="mobile-button__line"></span>
-          <span class="mobile-button__line"></span>
-        </button>
-       </div> 
-       <!-- /.header-wrapper -->
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo logo no-hover" href="./index.html" aria-label="Ehya logo">
+        <img src="img/header/Logo.png" alt="Ehya logo" />
+      </a>
+      <!-- /.header__logo -->
+      <div class="header__right">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#hero" class="nav__link">Главная</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#info" class="nav__link">Новинки</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#trends" class="nav__link">Тренды</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Отзывы</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a href="#footer" class="nav__link">Контакты</a>
+              <!-- /.nav__link -->
+            </li>
+            <!-- /.nav__item -->
+          </ul>
+          <!-- /.nav__list -->
+        </nav>
+        <!-- /.header__nav nav -->
+        <button class="button button--o header__button" data-target="modal">Войти</button>
+        <!-- /.button header__button -->
+        <img src="img/icon/close.svg" alt="Icon close" class="header__close" />
+        <!-- /.header__close -->
       </div>
-      <!-- /.header-container -->
+      <!-- /.header__right -->
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    <!-- /.container -->
+      <!-- /.header__burger -->
+    </div>
+    <!-- /.header__wrapper -->
+  </div>
+  <!-- /.container -->
 </header>
 <!-- /.header -->
 
@@ -76,7 +82,7 @@
         <h6 class="hashtag banner_left__hashtag"># READY TO BE COOL</h6>
         <h1 class="title banner_left__title">Каждый может быть крутым <br> и модным</h1>
         <p class="subtitle banner_left__subtitle">Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой стиль. Всё это вы можете найти здесь. Начните сейчас. </p>
-        <a href="#" class="button banner_left__button">Подобрать одежду</a>
+        <a href="#" class="button_all banner_left__button">Подобрать одежду</a>
         <ul class="banner_left__list">
             <li class="banner_left__item">
                 <img src="img/icon/donation.svg" alt="Icon: donation" class="banner_left__icon">
@@ -461,129 +467,133 @@
 </section>
 <!-- /.feedback -->
 
-        <section class="stories" id="stories">
-          <div class="container">
-            <div class="stories__wrapper">
-              <div class="stories-left">
-                <div class="stories-left__badges badges">
-                  <div class="stories-left__badge badge">Истории</div>
-                  <!-- /.stories-left__badge -->
-                </div>
-                <!-- /.stories-left__badges -->
-                <h2 class="stories-left__title title">Это История Fashun</h2>
-                <!-- /.stories-left__title -->
-                <p class="stories-left__text">
-                  Ознакомьтесь с&nbsp;нашим рассказом о&nbsp;моде. Написано нашим дизайнером и&nbsp;специалистом.
-                </p>
-                <!-- /.stories-left__text -->
-                <div class="stories-left__nav-list">
-                  <div class="stories-left__nav stories-left__nav--prev">
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.317 12.938c.312-.313.281-.782 0-1.094L4.536 8.25h9a.74.74 0 00.75-.75v-1a.76.76 0 00-.75-.75h-9l3.78-3.563c.282-.312.313-.78 0-1.093L7.63.406a.774.774 0 00-1.062 0L.504 6.5a.684.684 0 000 1.031l6.063 6.094c.281.281.75.281 1.062 0l.688-.688z"
-                      />
-                    </svg>
-                  </div>
-                  <!-- /.stories-left__nav -->
-                  <div class="stories-left__nav stories-left__nav--next">
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M5.938 1.094c-.313.312-.282.781 0 1.093l3.78 3.563H.75A.74.74 0 000 6.5v1c0 .438.313.75.75.75h8.969l-3.781 3.594a.814.814 0 000 1.094l.687.687c.313.281.781.281 1.063 0l6.093-6.094c.281-.281.281-.75 0-1.062L7.687.406c-.28-.281-.75-.281-1.062 0l-.688.688z"
-                      />
-                    </svg>
-                  </div>
-                  <!-- /.stories-left__nav -->
-                </div>
-                <!-- /.stories-left__nav-list -->
-              </div>
-              <!-- /.stories-left -->
-              <div class="swiper-container stories-slider">
-                <div class="swiper-wrapper stories-slider__wrapper">
-                  <div class="swiper-slide stories-slider__slide">
-                    <div class="stories-slider__item">
-                      <picture class="stories-slider__image">
-                        <img src="img/history/history_1.png" alt="First stories image" />
-                      </picture>
-                      <!-- /.stories-slider__image -->
-                      <div class="stories-slider__footer">
-                        <a href="#!" class="stories-slider__link no-hover" aria-label="Читать далее"></a>
-                        <!-- /.stories-slider__link -->
-                        <p class="stories-slider__text">Mix & Match Style 01: повседневный и формальный стиль</p>
-                        <!-- /.stories-slider__text -->
-                        <span href="#!" class="stories-slider__cta">Читать далее</span>
-                        <!-- /.stories-slider__link -->
-                      </div>
-                    </div>
-                    <!-- /.stories-slider__item -->
-                    
-                  </div>
-                  <!-- /.stories-slider__slide -->
-                  <div class="swiper-slide stories-slider__slide">
-                    <div class="stories-slider__item">
-                      <picture class="stories-slider__image">
-                        <img src="img/history/history_2.png" alt="Second stories image" />
-                      </picture>
-                      <!-- /.stories-slider__image -->
-                      <div class="stories-slider__footer">
-                        <a href="#!" class="stories-slider__link no-hover" aria-label="Читать далее"></a>
-                        <!-- /.stories-slider__link -->
-                        <p class="stories-slider__text">Лайфхак: Купите одежду Thrifft на воскресном рынке</p>
-                        <!-- /.stories-slider__text -->
-                        <span href="#!" class="stories-slider__cta">Читать далее</span>
-                        <!-- /.stories-slider__link -->
-                      </div>
-                    </div>
-                    <!-- /.stories-slider__item -->
-                  </div>
-                  <!-- /.stories-slider__slide -->
-                  <div class="swiper-slide stories-slider__slide">
-                    <div class="stories-slider__item">
-                      <picture class="stories-slider__image">
-                        <img src="img/history/history_2.png" alt="Third stories image" />
-                      </picture>
-                      <!-- /.stories-slider__image -->
-                      <div class="stories-slider__footer">
-                        <a href="#!" class="stories-slider__link no-hover" aria-label="Читать далее"></a>
-                        <!-- /.stories-slider__link -->
-                        <p class="stories-slider__text">
-                          Где&nbsp;покупать одежду и&nbsp;не&nbsp;переживать за&nbsp;качество
-                        </p>
-                        <!-- /.stories-slider__text -->
-                        <span href="#!" class="stories-slider__cta">Читать далее</span>
-                        <!-- /.stories-slider__link -->
-                      </div>
-                    </div>
-                    <!-- /.stories-slider__item -->
-                  </div>
-                  <!-- /.stories-slider__slide -->
-                  <div class="swiper-slide stories-slider__slide">
-                    <div class="stories-slider__item">
-                      <picture class="stories-slider__image">
-                        <img src="img/history/history_1.png" alt="Fourth stories image" />
-                      </picture>
-                      <!-- /.stories-slider__image -->
-                      <div class="stories-slider__footer">
-                        <a href="#!" class="stories-slider__link no-hover" aria-label="Читать далее"></a>
-                        <!-- /.stories-slider__link -->
-                        <p class="stories-slider__text">На работу влияет не&nbsp;только техника и&nbsp;окружение</p>
-                        <!-- /.stories-slider__text -->
-                        <span href="#!" class="stories-slider__cta">Читать далее</span>
-                        <!-- /.stories-slider__link -->
-                      </div>
-                    </div>
-                    <!-- /.stories-slider__item -->
-                  </div>
-                  <!-- /.stories-slider__slide -->
-                </div>
-                <!-- /.stories-slider__wrapper -->
-              </div>
-              <!-- /.stories-slider -->
-            </div>
-            <!-- /.stories__wrapper -->
+<section class="stories" id="stories">
+  <div class="container">
+    <div class="stories__wrapper">
+      <div class="stories-left">
+        <div class="stories-left__badges badges">
+          <div class="stories-left__badge badge">Истории</div>
+          <!-- /.stories-left__badge -->
+        </div>
+        <!-- /.stories-left__badges -->
+        <h2 class="stories-left__title title">Это История Fashun</h2>
+        <!-- /.stories-left__title -->
+        <p class="stories-left__text">
+          Ознакомьтесь с&nbsp;нашим рассказом о&nbsp;моде. Написано нашим дизайнером и&nbsp;специалистом.
+        </p>
+        <!-- /.stories-left__text -->
+        <div class="stories-left__nav-list">
+          <div class="stories-left__nav stories-left__nav--prev">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.317 12.938c.312-.313.281-.782 0-1.094L4.536 8.25h9a.74.74 0 00.75-.75v-1a.76.76 0 00-.75-.75h-9l3.78-3.563c.282-.312.313-.78 0-1.093L7.63.406a.774.774 0 00-1.062 0L.504 6.5a.684.684 0 000 1.031l6.063 6.094c.281.281.75.281 1.062 0l.688-.688z"
+              />
+            </svg>
           </div>
-          <!-- /.container -->
-        </section>
-        <!-- /.stories -->
+          <!-- /.stories-left__nav -->
+          <div class="stories-left__nav stories-left__nav--next">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.938 1.094c-.313.312-.282.781 0 1.093l3.78 3.563H.75A.74.74 0 000 6.5v1c0 .438.313.75.75.75h8.969l-3.781 3.594a.814.814 0 000 1.094l.687.687c.313.281.781.281 1.063 0l6.093-6.094c.281-.281.281-.75 0-1.062L7.687.406c-.28-.281-.75-.281-1.062 0l-.688.688z"
+              />
+            </svg>
+          </div>
+          <!-- /.stories-left__nav -->
+        </div>
+        <!-- /.stories-left__nav-list -->
+      </div>
+      <!-- /.stories-left -->
+      <div class="swiper-container stories-slider">
+        <div class="swiper-wrapper stories-slider__wrapper">
+
+          <div class="swiper-slide stories-slider__slide">
+            <div class="stories-slider__item">
+              <picture class="stories-slider__image">
+                <img src="img/history/history_1.png" alt="First stories image" />
+              </picture>
+              <!-- /.stories-slider__image -->
+              <div class="stories-slider__footer">
+                <a href="#!" class="stories-slider__link no-hover" aria-label="Читать далее"></a>
+                <!-- /.stories-slider__link -->
+                <p class="stories-slider__text">Mix & Match Style 01: повседневный и формальный стиль</p>
+                <!-- /.stories-slider__text -->
+                <span href="#!" class="stories-slider__cta">Читать далее</span>
+                <!-- /.stories-slider__link -->
+              </div>
+            </div>
+            <!-- /.stories-slider__item -->
+          </div>
+          <!-- /.stories-slider__slide -->
+
+          <div class="swiper-slide stories-slider__slide">
+            <div class="stories-slider__item">
+              <picture class="stories-slider__image">
+                <img src="img/history/history_2.png" alt="Second stories image" />
+              </picture>
+              <!-- /.stories-slider__image -->
+              <div class="stories-slider__footer">
+                <a href="#!" class="stories-slider__link no-hover" aria-label="Читать далее"></a>
+                <!-- /.stories-slider__link -->
+                <p class="stories-slider__text">Лайфхак: Купите одежду Thrifft на воскресном рынке</p>
+                <!-- /.stories-slider__text -->
+                <span href="#!" class="stories-slider__cta">Читать далее</span>
+                <!-- /.stories-slider__link -->
+              </div>
+            </div>
+            <!-- /.stories-slider__item -->
+          </div>
+          <!-- /.stories-slider__slide -->
+
+          <div class="swiper-slide stories-slider__slide">
+            <div class="stories-slider__item">
+              <picture class="stories-slider__image">
+                <img src="img/history/history_2.png" alt="Third stories image" />
+              </picture>
+              <!-- /.stories-slider__image -->
+              <div class="stories-slider__footer">
+                <a href="#!" class="stories-slider__link no-hover" aria-label="Читать далее"></a>
+                <!-- /.stories-slider__link -->
+                <p class="stories-slider__text">
+                  Где&nbsp;покупать одежду и&nbsp;не&nbsp;переживать за&nbsp;качество
+                </p>
+                <!-- /.stories-slider__text -->
+                <span href="#!" class="stories-slider__cta">Читать далее</span>
+                <!-- /.stories-slider__link -->
+              </div>
+            </div>
+            <!-- /.stories-slider__item -->
+          </div>
+          <!-- /.stories-slider__slide -->
+
+          <div class="swiper-slide stories-slider__slide">
+            <div class="stories-slider__item">
+              <picture class="stories-slider__image">
+                <img src="img/history/history_1.png" alt="Fourth stories image" />
+              </picture>
+              <!-- /.stories-slider__image -->
+              <div class="stories-slider__footer">
+                <a href="#!" class="stories-slider__link no-hover" aria-label="Читать далее"></a>
+                <!-- /.stories-slider__link -->
+                <p class="stories-slider__text">На работу влияет не&nbsp;только техника и&nbsp;окружение</p>
+                <!-- /.stories-slider__text -->
+                <span href="#!" class="stories-slider__cta">Читать далее</span>
+                <!-- /.stories-slider__link -->
+              </div>
+            </div>
+            <!-- /.stories-slider__item -->
+          </div>
+          <!-- /.stories-slider__slide -->
+
+        </div>
+        <!-- /.stories-slider__wrapper -->
+      </div>
+      <!-- /.stories-slider -->
+    </div>
+    <!-- /.stories__wrapper -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.stories -->
 
 <section class="subscribe">
   <div class="container">
@@ -784,7 +794,7 @@
         <!-- /.modal-form__icon-pw -->
       </div>
       <!-- /.modal-form__group -->
-      <button type="submit" class="button modal-form__button">Войти</button>
+      <button type="submit" class="button_all modal-form__button">Войти</button>
       <!-- /.button modal-form__button -->
     </form>
     <!-- /.modal-form -->
