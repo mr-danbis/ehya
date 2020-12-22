@@ -1,19 +1,37 @@
 .stories
-  margin-bottom: 117px
+  margin-bottom: 145px
   &__wrapper
     display: flex
-    // align-items: center
-    justify-content: space-between
+    flex-direction: row
+    margin-top: -63px
+    max-width: 100%
   &-left
-    margin-top: -10px
+    min-width: 392px
+    margin-right: 96px
     &__badges
-      margin-bottom: 28px
+      margin-bottom: 23px
+      background: rgba(54, 179, 126, 0.1)
+      border-radius: 2000px
+      padding: 6px 16px
+      width: 102px
     &__badge
       text-transform: uppercase
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      text-transform: uppercase
+      color: #36B37E
     &__title
-      max-width: 330px
+      font-family: HKGrotesk-Bold
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: #183B56
       margin-bottom: 24px
-      +font-hk-b
     &__text
       max-width: 400px
       max-height: 180px
@@ -48,126 +66,55 @@
       &-list
         display: flex
         align-items: center
-  &-slider
+  &-right
     max-width: 662px
-    margin-right: 0
-    margin-left: 0
-    &__slide
-      margin-top: 0
-    &__wrapper
+
+
+.swiper
+  &-slide
+    display: flex
+    flex-direction: row
+    &-1
+      margin-right: 18px
     &__item
-      overflow: hidden
+      width: 322px
+      height: 475px
+      position: relative
     &__image
+      position: absolute
       width: 312px
-      height: 317px
-      border-radius: 8px 8px 0 0
+      min-height: 317px
+      top: 0
+      left: 0
+      margin-top: 6px
+      border-radius: 8px
       overflow: hidden
-      img
-        width: 100%
-        height: 100%
-    &__footer
-      transform: translate(15px, -23px)
-      background-color: #fafdff
-      padding: 20px
-      padding-right: 50px
-    &__text
-      max-height: 96px
-      max-width: 100%
-      margin-bottom: 20px
-      overflow-y: auto
+    &__bottom
+      position: absolute
+      z-index: 888
+      background: #FAFDFF
+      width: 312px
+      padding-top: 20px
+      padding-left: 20px
+      padding-bottom: 20px
+      padding-right: 20px
+      top: 303px
+      right: 0
+      height: 178px
+    &__title
+      margin: 0
+      font-family: HKGrotesk-Medium
+      font-style: normal
+      font-weight: 500
       font-size: 22px
       line-height: 32px
       letter-spacing: 0.2px
-      +font-hk-m
+      color: #183B56
+      width: 100%
+      margin-bottom: 20px
     &__link
-      content: ''
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-    &__cta
-      color: $accent
+      font-style: normal
       font-weight: 600
       font-size: 16px
       line-height: 22px
-
-  .swiper-button-disabled
-    border: 1px solid #959EAD
-    cursor: default
-    svg
-      fill: #959EAD
-    +hover
-      border: 1px solid #959EAD
-      svg
-        fill: #959EAD
-
-@media screen and ( max-width: 992px )
-  .stories
-    &__wrapper
-      flex-wrap: wrap
-    &-slider
-      max-width: 100%
-      &__image
-        width: 450px
-    &-left
-      text-align: center
-      margin-bottom: 36px
-      width: 100%
-      &__badges
-        margin-bottom: 24px
-        justify-content: center
-      &__title
-        margin: 0 auto
-        margin-bottom: 16px
-        max-width: 85%
-      &__text
-        margin: 0 auto
-        margin-bottom: 36px
-        max-width: 550px
-      &__nav-list
-        justify-content: center
-@media screen and ( max-width: 768px )
-  .stories
-    margin-bottom: 57px
-    &-slider
-      &__footer
-        padding-right: 10px
-@media screen and (min-width: 575px)
-  .stories-slider__slide
-    margin-top: 0 !important
-@media screen and ( max-width: 576px )
-  .stories
-    margin-bottom: 73px
-    &-left
-      margin-bottom: 26px
-      &__badge
-        padding: 2px 12px
-      &__title
-        margin-bottom: 16px
-        font-size: 28px
-        line-height: 36px
-      &__text
-        font-size: 16px
-        line-height: 28px
-      &__nav
-        width: 48px
-        height: 48px
-    &-slider
-      &__wrapper
-        height: 830px
-        justify-content: space-between
-      &__slide
-        height: 48%
-      &__image
-        height: 277px
-      &__footer
-        transform: translate(7px, -23px)
-      &__text
-        margin-bottom: 16px
-        font-weight: 500
-        font-size: 20px
-        line-height: 24px
-      &__cta
-        font-size: 16px
-        line-height: 22px
+      color: #1565D8

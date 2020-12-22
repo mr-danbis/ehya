@@ -19,7 +19,7 @@ headerClose.addEventListener('click', menuClose)
 
 
 // Слайдер отзывов
-var mySwiper = new Swiper('.feedback-slider', {
+var mySwiperFeedBack = new Swiper('.feedback-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -29,36 +29,30 @@ var mySwiper = new Swiper('.feedback-slider', {
     el: '.swiper-pagination',
   },
 
-  
+  autoplay: {
+    delay: 7000,
+  },
+
 })
 
-const reviewsContainer = document.querySelector('.swiper-container')
+const reviewsContainer = document.querySelector('.feedback-slider')
 reviewsContainer.addEventListener('mouseover', () => mySwiper.autoplay.stop())
 reviewsContainer.addEventListener('mouseout', () => mySwiper.autoplay.start())
 
 
 
 // Слайдер с историями
-if (document.querySelector('.stories-slider')) {
-  const storiesSlider = new Swiper('.stories-slider', {
-    spaceBetween: 24,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    slidesPerColumn: 2,
-    navigation: {
-      prevEl: '.stories-left__nav--prev',
-      nextEl: '.stories-left__nav--next',
-    },
-    breakpoints: {
-      577: {
-        spaceBetween: 18,
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        slidesPerColumn: 1,
-      },
-    },
-  })
-}
+var mySwiperStories = new Swiper('.stories-slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.stories-left__nav--next',
+    prevEl: '.stories-left__nav--prev',
+  },
+})
 
 
 // Модалка
