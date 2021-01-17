@@ -3,6 +3,78 @@
     max-width: 500px
     margin: auto
 
+  .hero
+    margin-bottom: 61px
+    &__container
+      width: 100%
+      padding: 0
+    &__wrapper
+      padding: 377px 16px 36px
+      border-radius: 0
+      text-align: center
+    &__badges
+      margin-bottom: 16px
+      justify-content: center
+      &__title
+      margin: 0 auto
+      margin-bottom: 20px
+      font-size: 32px
+      line-height: 40px
+    &__desc
+      margin: 0 auto
+      margin-bottom: 24px
+      font-size: 16px
+      line-height: 28px
+    &__button
+      margin-bottom: 24px
+      font-size: 16px
+      line-height: 22px
+    &__bg
+      &::after
+        background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
+      &-image
+        transform: translate(-10%, -4%) scale(1.72)
+        height: 100%
+        
+  .features
+    &__list
+      flex-wrap: wrap
+      justify-content: center
+    &__item
+      margin-right: 16px
+      margin-bottom: 18px
+      &:nth-child(2)
+        margin-right: 0
+      &:nth-child(3)
+        flex-basis: 100%
+        justify-content: center
+      &:last-child
+        margin: 0
+    &__icon
+      display: block
+      width: 24px
+      height: 24px
+      border-radius: 8px
+      border: none
+      &--1
+        background: url('../img/hero/feature-1-m.svg') no-repeat center / cover
+      &--2
+        background: url('../img/hero/feature-2-m.svg') no-repeat center / cover
+      &--3
+        background: url('../img/hero/feature-3-m.svg') no-repeat center / cover
+      svg
+        display: none
+    &__text
+      font-size: 16px
+      line-height: 20px
+      +font-hk
+
+  .hero-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 10%
+
   .collection
     &_left
       &-wrapper
